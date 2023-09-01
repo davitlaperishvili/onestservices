@@ -133,4 +133,59 @@
       background: $ccorp;
     }
   }
+
+  .theme_button{
+    a{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 196px;
+      padding: 16px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $cwhite;
+      background-color: $ccorp;
+      border-radius: 4px;
+    }
+    &.black{
+      a{
+        background-color: $cmain;
+        color: $cwhite;
+      }
+    }
+    &.white{
+      a{
+        background-color: $cwhite;
+        color: $cmain;
+      }
+    }
+  }
+
+  .section_title{
+    margin-bottom: 32px;
+    font-size: 44px;
+    font-weight: 300;
+    color: $cmain;  
+    span{
+      font-weight: 600;
+    }
+    &.center{
+      text-align: center;
+    }
+  }
+
+  .section_text{
+    margin-bottom: 60px;
+    &.left_space{
+      padding-left: 28px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 2px;
+        background-color: $ccorp;
+      }
+    }
+  }
 }

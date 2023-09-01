@@ -12,9 +12,9 @@ import plugindParameters from "./libs/plugin_parameters.js";
 // window.$ = $;
 
 $(window).on("load", function () {
-	//formFunctions();
-	//additionalFunctions();
-	//plugindParameters();
-	hamburderMenu();
-	console.log("ready");
+  //formFunctions();
+  //additionalFunctions();
+  plugindParameters();
+  hamburderMenu();
+  console.log("ready");
 });
