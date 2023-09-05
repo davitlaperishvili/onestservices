@@ -17,8 +17,8 @@
     </figure>
     <div class="container">
       <div class="hero_content">
-        <h1 class="page_title">About us</h1>
-        <div class="page_subtitle">Avoid unnecessary expenses with Onest – Easy and Simple! Your needs is our Profession</div>
+        <h1 class="page_title">Property Services</h1>
+        <div class="page_subtitle">Choose Onest Services for your property needs, and experience the difference that two decades of local expertise can make.</div>
         <div class="theme_button">
           <a href="">Maintenance request</a>
         </div>
@@ -30,8 +30,7 @@
     <div class="container">
       <div class="block_wrap">
         <div class="block_content">
-          <div class="block_title">About Us</div>
-          <h2 class="section_title"><span>Full Transparency</span> <br> excellent communication</h2>
+          <h2 class="section_title"><span>A stress-free <br> experience</span></h2>
           <div class="section_text ">
             <p>Welcome to our revolutionary property management services! We pride ourselves on being unlike any typical property management company you've encountered. Say goodbye to high monthly fees draining your profits and embrace a smarter approach. With us, you stay in control while we provide the services you need, precisely when you need them. </p>
             <p>Our flexible "pay as you go" model empowers you to save money and maximize your rental return on investment. Experience property management that puts you first – efficient, cost-effective, and tailored to your unique requirements. Manage with ease, and let us handle the rest!</p>
@@ -45,59 +44,71 @@
             <figure>
               <img src="./images/about_us.jpg" alt="">
             </figure>
-            <div class="block_badge corp">
-              <div class="title">99%</div>
-              <div class="value">Collection <br> Rate</div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="list_points">
-    <figure>
-      <img src="./images/services_bg.jpg" alt="">
-    </figure>
+  <section class="our_services no_bg">
     <div class="container">
-      <h3 class="block_title center">MORE ABOUT US</h3>
-      <h2 class="section_title center"><span>Experienced and Trusted</span></h2>
-      <div class="points_list">
-        <div class="point_item">
+      <h2 class="section_title center">Our <span>Services</span></h2>
+      <div class="services_list service_links">
+        <div class="service_item">
+          <a href="#"></a>
           <figure>
             <img src="./images/service1.svg" alt="">
           </figure>
-          <div class="point_content">
-            <div class="service_title">Comprehensive Day-to-Day Management</div>
-            <div class="service_desc">Our team handles all the day-to-day activities involved in property management, serving as the primary point of contact between tenants, landlords, and contractors.</div>
-          </div>
+          <div class="service_title">Comprehensive Day-to-Day Management</div>
+          <div class="service_desc">Our team handles all the day-to-day activities involved in property management, serving as the primary point of contact between tenants, landlords, and contractors.</div>
         </div>
-        <div class="point_item">
+        <div class="service_item">
+          <a href="#"></a>
           <figure>
             <img src="./images/service2.svg" alt="">
           </figure>
-          <div class="point_content">
-            <div class="service_title">Tenant Replacement</div>
-            <div class="service_desc">Our Tenant Replacement service covers all aspects of transitioning between tenants, ensuring a smooth and efficient process.</div>
-          </div>
+          <div class="service_title">Tenant Replacement</div>
+          <div class="service_desc">Our Tenant Replacement service covers all aspects of transitioning between tenants, ensuring a smooth and efficient process.</div>
         </div>
-        <div class="point_item">
+        <div class="service_item">
+          <a href="#"></a>
           <figure>
             <img src="./images/service3.svg" alt="">
           </figure>
-          <div class="point_content">
-            <div class="service_title">Tenant Contract Renewal</div>
-            <div class="service_desc">Our Tenant Contract Renewal service is designed to maintain a positive and long-lasting relationship with tenants. We believe that a satisfied tenant is a long-term tenant, and we strive to provide a high level of service to ensure their satisfaction</div>
-          </div>
+          <div class="service_title">Tenant Contract Renewal</div>
+          <div class="service_desc">Our Tenant Contract Renewal service is designed to maintain a positive and long-lasting relationship with tenants. We believe that a satisfied tenant is a long-term tenant, and we strive to provide a high level of service to ensure their satisfaction</div>
         </div>
-        <div class="point_item">
+        <div class="service_item">
+          <a href="#"></a>
           <figure>
             <img src="./images/service4.svg" alt="">
           </figure>
-          <div class="point_content">
-            <div class="service_title">Trouble Tenant Management</div>
-            <div class="service_desc">Our Trouble Tenant Management service is designed to handle any issues that may arise with tenants, including late rent payments, city or HOA violations, refusal to vacate at the end of the lease term, and, if necessary, eviction proceedings.</div>
-          </div>
+          <div class="service_title">Trouble Tenant Management</div>
+          <div class="service_desc">Our Trouble Tenant Management service is designed to handle any issues that may arise with tenants, including late rent payments, city or HOA violations, refusal to vacate at the end of the lease term, and, if necessary, eviction proceedings.</div>
+        </div>
+        <div class="service_item">
+          <a href="#"></a>
+          <figure>
+            <img src="./images/service3.svg" alt="">
+          </figure>
+          <div class="service_title">Tenant Contract Renewal</div>
+          <div class="service_desc">Our Tenant Contract Renewal service is designed to maintain a positive and long-lasting relationship with tenants. We believe that a satisfied tenant is a long-term tenant, and we strive to provide a high level of service to ensure their satisfaction</div>
+        </div>
+        <div class="service_item">
+          <a href="#"></a>
+          <figure>
+            <img src="./images/service2.svg" alt="">
+          </figure>
+          <div class="service_title">Tenant Replacement</div>
+          <div class="service_desc">Our Tenant Replacement service covers all aspects of transitioning between tenants, ensuring a smooth and efficient process.</div>
+        </div>
+        <div class="service_item">
+          <a href="#"></a>
+          <figure>
+            <img src="./images/service3.svg" alt="">
+          </figure>
+          <div class="service_title">Tenant Contract Renewal</div>
+          <div class="service_desc">Our Tenant Contract Renewal service is designed to maintain a positive and long-lasting relationship with tenants. We believe that a satisfied tenant is a long-term tenant, and we strive to provide a high level of service to ensure their satisfaction</div>
         </div>
       </div>
     </div>
@@ -127,105 +138,24 @@
     </div>
   </section>
 
-  <section class="areas no_space">
+  <section class="text_block trans-all-4 reversed">
     <div class="container">
-      <h2 class="section_title center">Areas <span>we serve</span></h2>
-      <div class="area_slider_wrap">
-        <div class="areas_slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area1.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area2.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area3.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area4.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area5.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area6.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area7.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area5.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area3.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="area">
-                <figure>
-                  <img src="./images/area2.jpg" alt="">
-                </figure>
-                <div class="area_title">Collin County</div>
-              </div>
-            </div>
+      <div class="block_wrap">
+        <div class="block_content">
+          <h2 class="section_title"><span>Full Transparency</span> <br> excellent communication</h2>
+          <div class="section_text ">
+            <p>Welcome to our revolutionary property management services! We pride ourselves on being unlike any typical property management company you've encountered. Say goodbye to high monthly fees draining your profits and embrace a smarter approach. With us, you stay in control while we provide the services you need, precisely when you need them. </p>
+            <p>Our flexible "pay as you go" model empowers you to save money and maximize your rental return on investment. Experience property management that puts you first – efficient, cost-effective, and tailored to your unique requirements. Manage with ease, and let us handle the rest!</p>
+          </div>
+          <div class="theme_button">
+            <a href="#">Compare Our Prices</a>
           </div>
         </div>
-        
-        <div class="area-navigation">
-          <div class="swiper-button-prev area-arrow prev">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M23 11L28 16M28 16L23 21M28 16H4" stroke="#1C1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="swiper-button-next area-arrow next">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M23 11L28 16M28 16L23 21M28 16H4" stroke="#1C1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="block_media">
+          <div class="image_wrap">
+            <figure>
+              <img src="./images/about_us.jpg" alt="">
+            </figure>
           </div>
         </div>
       </div>

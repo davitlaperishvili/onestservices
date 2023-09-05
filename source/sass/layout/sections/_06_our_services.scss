@@ -4,6 +4,13 @@
     @media(max-width: 1024px){
       padding: 50px 0;
     }
+    &.no_bg{
+      padding: 0;
+      margin-bottom: 200px;
+      @media(max-width: 1024px){
+        margin-bottom: 50px;
+      }
+    }
     & > figure{
       position: absolute;
       left: 0;
@@ -65,6 +72,47 @@
         }
         .service_desc{
           font-size: 14px;
+        }
+      }
+      &.service_links{
+        .service_item{
+          border: 1px solid #E6E6E6;
+          border-radius: 8px;
+          background-color: transparent;
+          a{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+          }
+          figure{
+            margin-bottom: 10px;
+            padding-bottom: 0;
+            border-bottom: none;
+            @media(max-width: 1024px){
+              margin-bottom: 10px;
+              padding-bottom: 0;
+            }
+            img{
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .service_title{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          .service_desc{
+            font-size: 14px;
+          }
+          &:hover{
+            background-color: $cwhite;
+            border-color: $cwhite;
+            box-shadow: 24px 4px 96px rgba(#777777, 0.25);
+          }
         }
       }
     }
