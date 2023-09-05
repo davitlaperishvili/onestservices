@@ -6,6 +6,9 @@
     }
     &.no_space{
       padding: 0 0 200px;
+      @media(max-width: 1024px){
+        padding: 0 0 50px;
+      }
     }
     .section_title{
       margin-bottom: 70px;

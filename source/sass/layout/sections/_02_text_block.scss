@@ -77,6 +77,10 @@ section.text_block{
             bottom: 0;
             left: 0;
             right: unset;
+            @media(max-width: 1024px){
+              padding: 10px 15px;
+              transform: translateX(0);
+            }
             &:before{
               display: none;
             }
@@ -86,11 +90,17 @@ section.text_block{
               color: $cwhite;
               font-size: 60px;
               line-height: 90%;
+              @media(max-width: 1024px){
+                font-size: 30px;
+              }
             }
             .value{
               font-size: 36px;
               color: $cwhite;
               line-height: 100%;
+              @media(max-width: 1024px){
+                font-size: 20px;
+              }
             }
           }
         }

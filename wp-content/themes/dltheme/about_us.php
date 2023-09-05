@@ -54,6 +54,54 @@
     </div>
   </section>
 
+  <section class="list_points">
+    <figure>
+      <img src="./images/services_bg.jpg" alt="">
+    </figure>
+    <div class="container">
+      <h3 class="block_title center">MORE ABOUT US</h3>
+      <h2 class="section_title center"><span>Experienced and Trusted</span></h2>
+      <div class="points_list">
+        <div class="point_item">
+          <figure>
+            <img src="./images/service1.svg" alt="">
+          </figure>
+          <div class="point_content">
+            <div class="service_title">Comprehensive Day-to-Day Management</div>
+            <div class="service_desc">Our team handles all the day-to-day activities involved in property management, serving as the primary point of contact between tenants, landlords, and contractors.</div>
+          </div>
+        </div>
+        <div class="point_item">
+          <figure>
+            <img src="./images/service2.svg" alt="">
+          </figure>
+          <div class="point_content">
+            <div class="service_title">Tenant Replacement</div>
+            <div class="service_desc">Our Tenant Replacement service covers all aspects of transitioning between tenants, ensuring a smooth and efficient process.</div>
+          </div>
+        </div>
+        <div class="point_item">
+          <figure>
+            <img src="./images/service3.svg" alt="">
+          </figure>
+          <div class="point_content">
+            <div class="service_title">Tenant Contract Renewal</div>
+            <div class="service_desc">Our Tenant Contract Renewal service is designed to maintain a positive and long-lasting relationship with tenants. We believe that a satisfied tenant is a long-term tenant, and we strive to provide a high level of service to ensure their satisfaction</div>
+          </div>
+        </div>
+        <div class="point_item">
+          <figure>
+            <img src="./images/service4.svg" alt="">
+          </figure>
+          <div class="point_content">
+            <div class="service_title">Trouble Tenant Management</div>
+            <div class="service_desc">Our Trouble Tenant Management service is designed to handle any issues that may arise with tenants, including late rent payments, city or HOA violations, refusal to vacate at the end of the lease term, and, if necessary, eviction proceedings.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="text_block trans-all-4">
     <div class="container">
       <div class="block_wrap">
