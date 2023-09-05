@@ -3,7 +3,7 @@
 	color: $cbase;
 	font-size: 14px;
 	font-family: $ffbase, sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -166,9 +166,21 @@
     font-size: 44px;
     font-weight: 300;
     color: $cmain;  
+    @media(max-width: 1024px){
+      font-size: 24px;
+    }
     span{
       font-weight: 600;
     }
+    &.center{
+      text-align: center;
+    }
+  }
+  .section_subtitle{
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color: $cSubTitle;
+    font-size: 14px;
     &.center{
       text-align: center;
     }

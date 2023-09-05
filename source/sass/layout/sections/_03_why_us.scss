@@ -1,0 +1,96 @@
+.dl_theme section.why_us{
+  margin-bottom: 200px;
+  @media(max-width: 1024px){
+    margin-bottom: 50px;
+  }
+  & > figure{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 100%;
+    @media(max-width: 1024px){
+      max-width: 100%;
+      height: 30%;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($ccorp, 0.9);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .container{
+    .why_block_wrap{
+      display: grid;
+      grid-gap: 110px;
+      align-items: center;
+      grid-template-columns: 1.2fr 3fr;
+      @media(max-width: 1024px){
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+      }
+      .left_side_text{
+        .section_text{
+          color: $cwhite;
+          font-size: 20px;
+          @media(max-width: 1024px){
+            font-size: 16px;
+          }
+        }
+      }
+      .block_content{
+        .why_list{
+          ul{
+            @extend .no-list;
+            display: grid;
+            grid-gap: 14px 20px;
+            grid-template-columns: repeat(2, 1fr);
+            @media(max-width: 1024px){
+              grid-template-columns: 1fr;
+              gap: 10px;
+            }
+            li{
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: 40px 1fr;
+              padding: 30px 20px;
+              border-radius: 4px;
+              background-color: $cwhite;
+              box-shadow: 0 16px 40px rgba(#C28A56, 0.1);
+              @media(max-width: 1024px){
+                grid-template-columns: 1fr;
+                padding: 15px 10px;
+                gap: 10px;
+              }
+              figure{
+                img{
+
+                }
+              }
+              .why_content{
+                .why_title{
+                  font-weight: 700;
+                  font-size: 18px;
+                  color: #222222;
+                }
+                .why_desc{
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

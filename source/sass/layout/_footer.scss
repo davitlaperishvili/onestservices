@@ -1,3 +1,178 @@
 footer{
   background-color: $cmain;
+  .footer_wrap{
+    padding-top: 100px;
+    @media(max-width: 1024px){
+      padding-top: 0;
+    }
+    .container{
+      .footer_columns{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        padding-top: 70px;
+        border-top: 1px solid rgba($cwhite, 0.1);
+        margin-bottom: 100px;
+        @media(max-width: 1024px){
+          flex-direction: column;
+          padding-top: 30px;
+          margin-bottom: 30px;
+          gap: 20px;
+        }
+        .column{
+          .column_title{
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: $cwhite;
+            font-weight: 600;
+            @media(max-width: 1024px){
+              margin-bottom: 10px;
+            }
+          }
+          .footer_contact_info{
+            .info_item{
+              display: grid;
+              grid-gap: 16px;
+              grid-template-columns: max-content 1fr;
+              padding-top: 13px;
+              margin-top: 13px;
+              border-top: 1px solid rgba($cwhite, 0.1);
+              &:first-child{
+                margin-top: 0;
+              }
+              .svg_wrap{
+
+              }
+            }
+            .info_content{
+              .info_title{
+                font-size: 14px;
+                color: rgba($cwhite, 0.5);
+              }
+              .info_value{
+                font-size: 14px;
+                font-weight: 600;
+                color: $cwhite;
+                hr{
+                  border: 0;
+                  height: 1px;
+                  background-color: rgba($cwhite, 0.1);
+                }
+                a{
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: $cwhite;
+                  &:hover{
+                    color: $ccorp;
+                  }
+                }
+              }
+            }
+          }
+          .footer_url_list{
+            ul{
+              @extend .no-list;
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              li{
+                a{
+                  display: flex;
+                  align-items: center;
+                  font-size: 14px;
+                  color: rgba($cwhite, 0.7);
+                  padding-left: 20px;
+                  &:before{
+                    content: "\ea54";
+                    position: absolute;
+                    left: 0;
+                    font-family: $ffremix;
+                    color: $ccorp;
+                    font-size: 20px;
+                  }
+                  &:hover{
+                    color: $ccorp;
+                  }
+                }
+              }
+            }
+          }
+          .footer_socuals_list{
+            .socials{
+              ul{
+                gap: 8px;
+                li{
+                  margin-right: 0;
+                  a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    border: 1px solid rgba($cwhite, 0.1);
+                    i{
+                      font-size: 20px;
+                      color: $cwhite;
+                      &:before{
+                        color: $cwhite;
+                      }
+                    }
+                    &:hover{
+                      border: 1px solid $ccorp;
+                      color: $ccorp;
+                      i{
+                        color: $ccorp;
+                        &:before{
+                          color: $ccorp;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer_menu{
+        padding: 30px 0;
+        border-top: 1px solid rgba($cwhite, 0.1);
+        border-bottom: 1px solid rgba($cwhite, 0.1);
+        @media(max-width: 1024px){
+          padding: 15px 0;
+        }
+        ul{
+          @extend .no-list;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          justify-content: center;
+          @media(max-width: 1024px){
+            flex-direction: column;
+            gap: 10px;
+          }
+          li{
+            a{
+              color: $cwhite;
+              font-size: 16px;
+              font-weight: 600;
+              &:hover{
+                color: $ccorp;
+              }
+            }
+          }
+        }
+      }
+      .copyright{
+        padding: 30px 0;
+        text-align: center;
+        font-size: 14px;
+        color: rgba($cwhite, 0.5);
+        @media(max-width: 1024px){
+          padding: 15px 0;
+        }
+      }
+    }
+  }
 }

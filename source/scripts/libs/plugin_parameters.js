@@ -12,10 +12,29 @@ export default function plugindParameters() {
     });
   });
   // Slider
-  new Swiper(".swiper", {
+  new Swiper(".feedbacks_slider", {
     slidesPerView: 1,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".feedback-pagination",
+      clickable: true,
+    },
+  });
+  new Swiper(".areas_slider", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: false,
+    breakpoints: {
+      720: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 7,
+      },
     },
   });
   // Gallery

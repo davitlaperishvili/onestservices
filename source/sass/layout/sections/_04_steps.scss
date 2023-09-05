@@ -1,0 +1,68 @@
+.dl_theme{
+  section.steps{
+    margin-bottom: 200px;
+    @media(max-width: 1024px){
+      margin-bottom: 50px;
+    }
+    .steps_list{
+      display: grid;
+      grid-gap: 40px 105px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 70px;
+      @media(max-width: 1024px){
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+      }
+      .step_item{
+        .step_top{
+          margin-bottom: 20px;
+          figure{
+            width: 100%;
+            height: 197px;
+            img{
+              width: 100%;
+              height: 100%;
+              border-radius: 4px;
+            }
+          }
+          .step_number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 69px;
+            height: 69px;
+            position: absolute;
+            left: -28px;
+            top: -35px;
+            font-size: 40px;
+            font-weight: 700;
+            color: $ccorp;
+            border-radius: 50%;
+            background-color: $cwhite;
+            box-shadow: 0 16px 40px rgba($cShadow, 0.26);
+            @media(max-width: 1024px){
+              width: 40px;
+              height: 40px;
+              left: 0;
+              top: 0;
+              font-size: 20px;
+            }
+          }
+        }
+        .step_bottom{
+          .step_title{
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            span{
+              color: $ccorp;
+            }
+          }
+          .step_content{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

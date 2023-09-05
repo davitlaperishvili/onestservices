@@ -1,0 +1,138 @@
+.dl_theme{
+  section.client_feedbacks{
+    background-color: rgba(#F4F4F4, 0.85);
+    padding-top: 50px;
+    z-index: 3;
+    @media(max-width: 1024px){
+      padding-top: 0;
+    }
+    .container{
+      top: 150px;
+      @media(max-width: 1024px){
+        top: 50px;
+      }
+    }
+    .feedbacks_content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: $cwhite;
+      padding-bottom: 20px;
+      background-color: $ccorp;
+      @media(max-width: 1024px){
+        grid-template-columns: 1fr;
+      }
+      &:before{
+        @extend .overlay;
+        width: 50%;
+        left: unset;
+        right: 0;
+        background-color: rgba($ccorp, 0.9);
+        @media(max-width: 1024px){
+          width: 100%;
+          bottom: 0;
+        }
+      }
+      .left_text{
+        display: flex;
+        align-items: center;
+        padding: 40px 60px;
+        background-color: $ccorp;
+        @media(max-width: 1024px){
+          padding: 20px;
+        }
+        .left_text{
+
+          @media(max-width: 1024px){
+            font-size: 14px;
+          }
+        }
+        h2{
+          margin-bottom: 15px;
+          font-size: 36px;
+          @media(max-width: 1024px){
+            font-size: 22px;
+          }
+        }
+        h3{
+          margin-bottom: 10px;
+          font-size: 30px;
+          @media(max-width: 1024px){
+            font-size: 16px;
+          }
+        }
+      }
+      .feedbacks_slider{
+        margin: 40px 60px;
+        @media(max-width: 1024px){
+          margin: 20px;
+        }
+        .swiper-slide{
+          .item_wrap{
+            padding-right: 15px;
+            height: 350px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              width: 10px;
+              @media(max-width: 1024px){
+                width: 5px;
+              }
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: rgba($cwhite, 0.2);
+                border-radius: 10px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: $cwhite;
+            }
+            .feedback_text{
+              margin-bottom: 32px;
+              font-size: 18px;
+              font-weight: 300;
+              @media(max-width: 1024px){
+                margin-bottom: 15px;
+                font-size: 14px;
+              }
+            }
+            .feedback_author{
+              color: $cmain;
+              .author_name{
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: 900;
+                @media(max-width: 1024px){
+                  font-size: 16px;
+                }
+              }
+              .author_status{
+                font-family: $ffmont;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      .feedback-pagination{
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% + 60px);
+        width: max-content;
+        @media(max-width: 1024px){
+          left: 20px;
+          bottom: 10px;
+        }
+        .swiper-pagination-bullet{
+          border: 2px solid $cmain;
+          background-color: transparent;
+          opacity: 1;
+          &.swiper-pagination-bullet-active{
+            background-color: $cmain;
+          }
+        }
+      }
+    }
+  }
+}
