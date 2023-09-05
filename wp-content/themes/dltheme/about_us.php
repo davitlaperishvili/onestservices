@@ -11,28 +11,43 @@
 </head>
 <body >
 
-  <section class="text_block trans-all-4">
+  <section class="hero_inside">
+    <figure>
+      <img src="./images/hero_inside.jpg" alt="">
+    </figure>
+    <div class="container">
+      <div class="hero_content">
+        <h1 class="page_title">About us</h1>
+        <div class="page_subtitle">Avoid unnecessary expenses with Onest – Easy and Simple! Your needs is our Profession</div>
+        <div class="theme_button">
+          <a href="">Maintenance request</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text_block reversed trans-all-4">
     <div class="container">
       <div class="block_wrap">
-        <div class="block_media">
-          <div class="image_wrap">
-            <figure>
-              <img src="./images/about_us.jpg" alt="">
-            </figure>
-            <div class="block_badge">
-              <div class="title">Over 20 years</div>
-              <div class="value">In rental management</div>
-            </div>
-          </div>
-        </div>
         <div class="block_content">
           <h2 class="section_title"><span>Full Transparency</span> <br> excellent communication</h2>
-          <div class="section_text left_space">
+          <div class="section_text ">
             <p>Welcome to our revolutionary property management services! We pride ourselves on being unlike any typical property management company you've encountered. Say goodbye to high monthly fees draining your profits and embrace a smarter approach. With us, you stay in control while we provide the services you need, precisely when you need them. </p>
             <p>Our flexible "pay as you go" model empowers you to save money and maximize your rental return on investment. Experience property management that puts you first – efficient, cost-effective, and tailored to your unique requirements. Manage with ease, and let us handle the rest!</p>
           </div>
           <div class="theme_button">
             <a href="#">Compare Our Prices</a>
+          </div>
+        </div>
+        <div class="block_media">
+          <div class="image_wrap">
+            <figure>
+              <img src="./images/about_us.jpg" alt="">
+            </figure>
+            <div class="block_badge corp">
+              <div class="title">99%</div>
+              <div class="value">Collection <br> Rate</div>
+            </div>
           </div>
         </div>
       </div>

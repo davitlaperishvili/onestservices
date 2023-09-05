@@ -64,4 +64,37 @@ section.text_block{
       }
     }
   }
+  &.reversed{
+    .block_wrap{
+      .block_media{
+        order: -1;
+        .image_wrap{
+          .block_badge{
+            padding: 20px 40px;
+            background-color: $ccorp;
+            text-align: center;
+            transform: translateX(-20%);
+            bottom: 0;
+            left: 0;
+            right: unset;
+            &:before{
+              display: none;
+            }
+            .title{
+              margin-bottom: 0;
+              font-weight: 700;
+              color: $cwhite;
+              font-size: 60px;
+              line-height: 90%;
+            }
+            .value{
+              font-size: 36px;
+              color: $cwhite;
+              line-height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
