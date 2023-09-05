@@ -6,6 +6,13 @@
       padding: 50px 0;
       margin-bottom: 50px;
     }
+    &.no_bg{
+      padding: 0;
+      margin-bottom: 200px;
+      @media(max-width: 1024px){
+        margin-bottom: 50px;
+      }
+    }
     & > figure{
       position: absolute;
       left: 0;
@@ -24,18 +31,16 @@
       }
     }
     .section_title{
-      margin-bottom: 60px;
-      @media(max-width: 1024px){
-        margin-bottom: 30px;
-      }
     }
     .points_list{
       display: grid;
       grid-gap: 65px 110px;
       grid-template-columns: repeat(2, 1fr);
+      margin-top: 60px;
       @media(max-width: 1024px){
         grid-gap: 20px;
         grid-template-columns: 1fr;
+        margin-top: 30px;
       }
       .point_item{
         display: grid;
@@ -83,5 +88,6 @@
         }
       }
     }
+    
   }
 }

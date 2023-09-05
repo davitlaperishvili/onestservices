@@ -214,4 +214,17 @@
       text-align: center;
     }
   }
+
+  .section_note{
+    margin-top: 80px;
+    padding: 23px 32px;
+    border-left: 3px solid $ccorp;   
+    background-color: rgba($ccorp, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    @media(max-width: 1024px){
+      margin-top: 40px;
+      padding: 10px 15px;
+    }
+  }
 }
