@@ -42,6 +42,26 @@
         grid-template-columns: 1fr;
         margin-top: 30px;
       }
+      &.box_shadow{
+        grid-gap: 20px 40px;
+        @media(max-width: 1024px){
+          grid-gap: 20px;
+        }
+        .point_item{
+          padding: 30px;
+          grid-gap: 10px;
+          @media(max-width: 1024px){
+            padding: 15px;
+          }
+          figure{
+            height: 40px;
+            @media(max-width: 1024px){
+              height: 40px;
+              width: 40px;
+            }
+          }
+        }
+      }
       .point_item{
         display: grid;
         grid-gap: 18px;

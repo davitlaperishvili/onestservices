@@ -1,0 +1,46 @@
+.dl_theme{
+  section.banner{
+    background-color: rgba($ccorp, 0.2);
+    @media(max-width: 1024px){
+      padding-bottom: 30px;
+    }
+    &:after{
+      @extend .overlay;
+      background-color: $cwhite;
+      height: 50px;
+    }
+    .container{
+      z-index: 2;
+      .banner_wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: 100px;
+        @media(max-width: 1024px){
+          grid-template-columns: 1fr;
+          grid-gap: 15px;
+        }
+        .banner_content{
+          .banner_title{
+            margin-bottom: 57px;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1C1C1E;
+            @media(max-width: 1024px){
+              margin-bottom: 20px;
+              font-size: 20px;
+            }
+          }
+        }
+        figure{
+          @media(max-width: 1024px){
+            order: -1;
+          }
+          img{
+
+          }
+        }
+      }
+    }
+  }
+}
