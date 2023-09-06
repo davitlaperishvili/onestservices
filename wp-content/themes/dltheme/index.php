@@ -240,7 +240,6 @@
         </div>
         <div class="prices_list">
           <div class="price_item">
-            <div class="price_item_title"></div>
             <div class="price_includes bold">
               <div>Price</div>
               <div>Monthly rent+ deposit</div>
