@@ -21,9 +21,15 @@
           <div class="block_content">
             <h2 class="section_title"><?php echo $section_title ?></h2>
             <div class="section_text <?php echo $borderedTextClass ?>"><?php echo $section_text ?></div>
-            <div class="theme_button">
-              <a href="<?php echo $section_button['url'] ?>"><?php echo $section_button['title'] ?></a>
-            </div>
+            <?php 
+              if($section_button && $section_button['title']){
+                ?>
+                  <div class="theme_button">
+                    <a href="<?php echo $section_button['url'] ?>"><?php echo $section_button['title'] ?></a>
+                  </div>
+                <?php
+              }
+            ?>
           </div>
           <div class="block_media">
             <div class="image_wrap">

@@ -16,7 +16,8 @@ $dl_includes = array(
 	'/widgets.php',
 	'/enqueue.php',
 	'/menus.php',
-	'/options-page.php'
+	'/options-page.php',
+	'/post_types.php',
 );
 
 // Include files
@@ -33,3 +34,4 @@ add_filter( 'paginate_links', function($link){
 
     return $link;
 } );
+

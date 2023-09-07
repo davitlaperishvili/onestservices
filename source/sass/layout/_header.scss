@@ -1,0 +1,11 @@
+.dl_theme{
+  header{
+    z-index: 2;
+    padding: 15px 0;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

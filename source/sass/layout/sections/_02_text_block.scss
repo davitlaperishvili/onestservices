@@ -12,7 +12,28 @@ section.text_block{
       grid-template-columns: 1fr;
     }
     .block_content{
-
+      .section_text{
+        ul,ol{
+          @extend .no-list;
+          display: grid;
+          grid-gap: 10px 20px;
+          grid-template-columns: repeat(2, 1fr);
+          @media(max-width: 1024px){
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+          }
+          li{
+            display: flex;
+            align-items: center;
+            &:before{
+              content: "\eb7b";
+              margin-right: 10px;
+              font-family: $ffremix;
+              color: $ccorp;
+            }
+          }
+        }
+      }
     }
     .block_media{
       .image_wrap{

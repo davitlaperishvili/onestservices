@@ -4,7 +4,8 @@
         $block_title = get_sub_field('block_title'); 
         $section_subtitle = get_sub_field('section_subtitle'); 
         $section_image = get_sub_field('section_image'); 
-        $step_items = get_sub_field('step_items'); 
+        $box_shadow_color = get_sub_field('box_shadow_color'); 
+        $points_list = get_sub_field('pointes_list'); 
         $section_note = get_sub_field('section_note'); 
         
         $rowIndex = get_row_index();
@@ -34,15 +35,15 @@
         <?php 
           if($section_subtitle ){
             ?>
-              <h3 class="block_title center"><?php echo $section_subtitle ?></h3>
+              <div class="section_subtitle center"><?php echo $section_subtitle ?></div>
             <?php
           }
         ?>
-        <div class="points_list <?php echo $point['box_shadow_color'] ? "box_shadow" : "" ?>">
+        <div class="points_list <?php echo $box_shadow_color ? "box_shadow" : "" ?>">
           <?php 
             foreach($points_list as $point ){
               ?>
-                <div class="point_item" style="box-shadow: 0 16px 40px <?php echo $point['box_shadow_color'] ?>;">
+                <div class="point_item" style="<?php echo $box_shadow_color ? 'box-shadow: 0 16px 40px' + $box_shadow_color : "" ?>">
                   <figure>
                     <img src="<?php echo $point['image']['url'] ?>" alt="<?php echo $point['image']['alt'] ?>">
                   </figure>

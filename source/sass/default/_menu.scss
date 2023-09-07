@@ -15,7 +15,7 @@
         }
         > a{
           @extend .trans-4;
-          color: $cwhite;
+          color: $cbase;
           font-size: 16px;
           font-family: $ffbase;
           font-weight: 400;
@@ -37,10 +37,10 @@
         &.current-menu-ancestor,
         &:hover{
           > a{
-            color: $cred;
+            color: $ccorp;
           }
           &:after{
-            color: $cred;
+            color: $ccorp;
           }
         }
         ul{
