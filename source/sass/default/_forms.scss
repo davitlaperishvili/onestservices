@@ -15,7 +15,7 @@
   input[type="week"],
   textarea{
     width: 100%;
-    height: 45px;
+    height: 50px;
     padding: 0 15px;
     color: $cbase;
     background-color: $cwhite;
@@ -144,9 +144,12 @@
     opacity: 1;
   }
   label{
+    margin-bottom: 10px;
     display: block;
     line-height: 1.5;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
   }
   select{
     width: 100%;
@@ -362,6 +365,7 @@
       background-color: $cwhite;
       span.select2-results{
         ul{
+          @extend .no-list;
           li{
             padding: 7px 10px;
             font-size: 12px;
@@ -385,6 +389,7 @@
         span.select2-results{
           ul{
             padding: 0 10px 10px;
+            box-shadow: 0 4px 26px rgba($cbase, 0.1);
           }
         }
       }
@@ -460,8 +465,38 @@
       margin-right: 10px;
     }
   }
+  .form_items{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    @media(max-width: 1024px){
+      grid-gap: 10px;
+    }
+    .items_row{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      @media(max-width: 1024px){
+        grid-gap: 10px;
+      }
+    }
+  }
   div.form_item{
-    margin-bottom: 20px;
+    width: 100%;
+    flex: 1;
+    min-width: 200px;
+    br{
+      display: none;
+    }
+    &.form_submit{
+      margin-top: 10px;
+    }
+    textarea{
+      height: 140px;
+    }
     div.form_checkers{
       display: flex;
       flex-wrap: wrap;

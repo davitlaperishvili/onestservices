@@ -39,6 +39,23 @@
                 elseif( get_row_layout() == 'list_points' ):
                     include(TEMPLATEPATH.'/acf-widgets/widget-list_points.php');
 
+                elseif( get_row_layout() == 'banner' ):
+                    include(TEMPLATEPATH.'/acf-widgets/widget-banner.php');
+
+                elseif( get_row_layout() == 'service_prices' ):
+                    include(TEMPLATEPATH.'/acf-widgets/widget-service_prices.php');
+                    
+                elseif( get_row_layout() == 'contact_info' ):
+                  include(TEMPLATEPATH.'/acf-widgets/widget-contact_info.php');
+                  
+
+                elseif( get_row_layout() == 'contact_form' ):
+                  include(TEMPLATEPATH.'/acf-widgets/widget-contact_form.php');
+                  
+
+                elseif( get_row_layout() == 'clients' ):
+                  include(TEMPLATEPATH.'/acf-widgets/widget-clients.php');
+
                 endif;
             endwhile;
         

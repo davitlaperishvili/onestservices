@@ -78,16 +78,18 @@ section.hero{
               height: max-content;
               &::after{
                 left: -40px;
-                content: "";
-                background-image: url(../../images/dots.svg);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
+                content: url(../../images/dots.svg);
+                @media(max-width: 1024px){
+                  background-image: url(../../images/dots.svg);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  width: 100%;
+                  height: 100%;
+                }
               }
               &:before{
                 content: url(../../images/hero-house.svg);

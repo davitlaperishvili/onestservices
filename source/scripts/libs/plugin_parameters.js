@@ -4,7 +4,7 @@ import Swiper from "swiper/bundle";
 export default function plugindParameters() {
   // Selector styling
   $("select.selectori").each(function () {
-    var placeholder = $(this).data("placeholder") || "Default placeholder";
+    var placeholder = $(this).data("placeholder") || "Choose";
     $(this).select2({
       allowClear: true,
       minimumResultsForSearch: -1,
@@ -14,6 +14,7 @@ export default function plugindParameters() {
   // Slider
   new Swiper(".feedbacks_slider", {
     slidesPerView: 1,
+    autoplay: true,
     pagination: {
       el: ".feedback-pagination",
       clickable: true,

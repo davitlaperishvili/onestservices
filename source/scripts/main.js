@@ -1,4 +1,4 @@
-// import 'select2';
+import "select2";
 // import 'magnific-popup';
 
 import hamburderMenu from "./libs/hamburger_menu.js";
@@ -72,4 +72,21 @@ $(window).on("load", function () {
   priceItems.forEach(function (priceItem) {
     priceItem.style.minHeight = `${minHeight}px`;
   });
+
+  // Micromodal
+  MicroModal.init({
+    awaitCloseAnimation: true,
+    disableScroll: true,
+    disableFocus: true,
+  });
+
+  if (!sessionStorage.getItem("isModal")) {
+    sessionStorage.setItem("isModal", "yes");
+  }
+  setTimeout(function () {
+    if (sessionStorage.getItem("isModal") === "yes") {
+      MicroModal.show("modal-register2");
+      sessionStorage.setItem("isModal", "no");
+    }
+  }, 80000);
 });

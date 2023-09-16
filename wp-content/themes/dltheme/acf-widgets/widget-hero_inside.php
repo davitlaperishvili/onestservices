@@ -28,7 +28,7 @@
           ?>
           
           <div class="theme_button">
-            <a href="tel:<?php echo $phone ?>"><?php echo $button_text ?></a>
+            <a href="javascript:void(0)" data-micromodal-trigger='modal-register2'><?php echo $button_text ?></a>
           </div>
         </div>
       </div>

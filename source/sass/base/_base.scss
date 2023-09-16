@@ -181,7 +181,9 @@
     margin-bottom: 30px;
     color: $cSubTitle;
     font-size: 14px;
+    max-width: 940px;
     &.center{
+      margin: -15px auto 30px;
       text-align: center;
     }
   }

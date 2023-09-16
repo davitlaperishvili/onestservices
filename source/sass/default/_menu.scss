@@ -6,9 +6,9 @@
     > ul{
       @extend .no-list;
       display: flex;
-      margin-right: 100px;
+      margin-right: 20px;
       > li{
-        margin-right: 55px;
+        margin-right: 25px;
         padding: 10px 0;
         &:last-child{
           margin-right: 0;
@@ -30,11 +30,15 @@
             font-family: $ffremix;
             font-weight: 400;
             font-size: 16px;
-            color: $cwhite;
+            color: $cbase;
           }
         }
         &.current-menu-item,
-        &.current-menu-ancestor,
+        &.current-menu-ancestor{
+          & > a{
+            font-weight: 700;
+          }
+        }
         &:hover{
           > a{
             color: $ccorp;
@@ -144,7 +148,7 @@
         width: 25px;
         height: 2px;
         top: 50%;
-        right: 10px;
+        right: 5px;
         background-color: $cwhite;
         &:first-child{
           margin-top: -7px;

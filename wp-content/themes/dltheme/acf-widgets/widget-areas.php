@@ -20,10 +20,11 @@
             <?php
           }
         ?>
-        <div class="area_slider_wrap">
+        
           <?php 
             if($section_style === "slider"){
               ?>
+              <div class="area_slider_wrap">
                 <div class="areas_slider swiper">
                   <div class="swiper-wrapper">
                     <?php 
@@ -49,45 +50,6 @@
                     ?>
                   </div>
                 </div>
-              <?php
-            } elseif($section_style === "list"){
-              ?>
-                <div class="areas_list">
-                  <?php 
-                    foreach($areas_list as $areaItem){
-                      ?>
-                        <div class="area">
-                          <?php 
-                            if($area['url'] && $is_links){
-                              ?>
-                                <a href="<?php echo $area['url'] ?>"></a>
-                              <?php
-                            }
-                          ?>
-                          <figure>
-                            <img src="<?php echo $area['image']['url'] ?>" alt="<?php echo $area['image']['alt'] ?>">
-                          </figure>
-                          <div class="area_content">
-                            <div class="area_title"><?php echo $area['title'] ?></div>
-                            <?php 
-                              if($section_style === "list" && $area['desc']){
-                                ?>
-                                <div class="area_desc"><?php echo $area['desc'] ?></div>
-                                <?php
-                              }
-                            ?>
-                          </div>
-                        </div>
-                      <?php
-                    }
-                  ?>
-                </div>
-              <?php
-            }
-          ?>
-          <?php
-            if($section_style === "slider"){
-              ?>
                 <div class="area-navigation">
                   <div class="swiper-button-prev area-arrow prev">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,6 +61,40 @@
                     <path d="M23 11L28 16M28 16L23 21M28 16H4" stroke="#1C1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                </div>
+              </div>
+              <?php
+            } elseif($section_style === "list"){
+              ?>
+                <div class="areas_list">
+                  <?php 
+                    foreach($areas_list as $areaItem){
+                      ?>
+                        <div class="area">
+                          <?php 
+                            if($areaItem['url'] && $is_links){
+                              ?>
+                                <a href="<?php echo $areaItem['url'] ?>"></a>
+                              <?php
+                            }
+                          ?>
+                          <figure>
+                            <img src="<?php echo $areaItem['image']['url'] ?>" alt="<?php echo $areaItem['image']['alt'] ?>">
+                          </figure>
+                          <div class="area_content">
+                            <div class="area_title"><?php echo $areaItem['title'] ?></div>
+                            <?php 
+                              if($section_style === "list" && $areaItem['desc']){
+                                ?>
+                                <div class="area_desc"><?php echo $areaItem['desc'] ?></div>
+                                <?php
+                              }
+                            ?>
+                          </div>
+                        </div>
+                      <?php
+                    }
+                  ?>
                 </div>
               <?php
             }

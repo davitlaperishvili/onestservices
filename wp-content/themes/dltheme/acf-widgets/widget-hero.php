@@ -7,6 +7,8 @@
         $hero_image_1 = get_sub_field('hero_image_1'); 
         $hero_image_2 = get_sub_field('hero_image_2'); 
         $hero_items = get_sub_field('hero_items'); 
+        $open_popup = get_sub_field('open_popup') ? "data-micromodal-trigger='modal-register2'" : ""; 
+        $button_url = get_sub_field('open_popup') ? "javascript:void(0)" : $hero_button['url']; 
         
         $rowIndex = get_row_index();
     ?>
@@ -22,7 +24,7 @@
             <h1 class="page_title"><?php echo $heroTitle ?></h1>
             <div class="page_subtitle"><?php echo $heroSubTitle ?></div>
             <div class="theme_button black">
-              <a href="<?php echo $hero_button['url'] ?>"><?php echo $hero_button['title'] ?></a>
+              <a href="<?php echo $button_url ?>"  <?php echo $open_popup ?>><?php echo $hero_button['title'] ?></a>
             </div>
           </div>
           <div class="hero_media">

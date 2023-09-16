@@ -1,0 +1,166 @@
+.dl_theme{
+  section.service_prices{
+    margin-bottom: 200px;
+    @media(max-width: 1024px){
+      margin-bottom: 50px;
+    }
+    .prices_list{
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1fr;
+      .price_item{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px 70px;
+        border: 1px solid #D8D8D8;
+        border-radius: 4px;
+        @media(max-width: 1440px){
+          padding: 20px 40px;
+        }
+        @media(max-width: 1024px){
+          grid-gap: 15px;
+          grid-template-columns: 1fr;
+          padding: 15px 20px;
+        }
+        .price_main_info{
+          padding-right: 70px;
+          border-right: 1px solid #D8D8D8;
+          @media(max-width: 1440px){
+            padding-right: 30px;
+          }
+          @media(max-width: 1024px){
+            padding-right: 0;
+            padding-bottom: 15px;
+            border-right: none;
+            border-bottom: 1px solid #D8D8D8;
+          }
+          .service_title{
+            margin-bottom: 16px;
+            @media(max-width: 1024px){
+              margin-bottom: 10px;
+            }
+            a{
+              font-size: 24px;
+              color: $cmain;
+              font-weight: 700;
+              @media(max-width: 1024px){
+                font-size: 20px;
+              }
+            }
+          }
+          .price_value{
+            // display: flex;
+            margin-bottom: 10px;
+            color: $cmain;
+            .price{
+              font-size: 45px;
+              font-weight: 700;
+              color: $cmain;
+              @media(max-width: 1024px){
+                font-size: 35px;
+              }
+            }
+            sub{
+              font-size: 30px;
+              font-weight: 500;
+              color: rgba($cmain, 0.4);
+              @media(max-width: 1024px){
+                font-size: 20px;
+              }
+            }
+          }
+          .price_additional_info{
+            font-size: 16px;
+            color: #8E8E93;
+            @media(max-width: 1024px){
+              font-size: 14px;
+            }
+          }
+        }
+        .price_items{
+          padding-left: 70px;
+          @media(max-width: 1440px){
+            padding-left: 30px;
+          }
+          @media(max-width: 1024px){
+            padding-left: 0;
+            padding-top: 15px;
+          }
+          ul{
+            @extend .no-list;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          li{
+            display: grid;
+            align-items: center;
+            grid-gap: 10px;
+            grid-template-columns: 20px 1fr;
+            &:before{
+              content: "\eb7b";
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              background-color: $ccorp;
+              color: $cwhite;
+              border-radius: 50%;
+              font-family: $ffremix;
+            }
+          }
+        }
+        .price_button{
+          display: flex;
+          width: 100%;
+          justify-content: flex-end;
+          @media(max-width: 1024px){
+            justify-content: center;
+          }
+        }
+        &:hover{
+          background-color: $ccorp;
+          border-color: $ccorp;
+          .price_main_info{
+            border-right-color: $cwhite;
+            .service_title{
+              a{
+                color: $cwhite;
+              }
+            }
+            .price_value{
+              color: $cwhite;
+              .price{
+                color: $cwhite;
+              }
+              sub{
+                color: rgba($cwhite, 0.6);
+              }
+            }
+            .price_additional_info{
+              color: $cwhite;
+            }
+          }
+          .price_items{
+            li{
+              color: $cwhite;
+              &:before{
+                background-color: $cwhite;
+                color: $ccorp;
+              }
+            }
+          }
+          .price_button{
+            .theme_button{
+              a{
+                background-color: $cwhite;
+                color: $ccorp;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

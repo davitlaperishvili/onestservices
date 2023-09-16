@@ -1,0 +1,19 @@
+.dl_theme{
+  section.contact_form{
+    background-color: #F7F8FA;
+    padding: 200px 0;
+    .contact_form_wrap{
+      padding: 40px 30px;
+      background-color: $cwhite;
+      box-shadow: 0 4px 26px rgba(#42474C, 0.08);
+      border-radius: 4px;
+    }
+    &.down{
+      padding: 50px 0;
+      z-index: 3;
+      .contact_form_wrap{
+        top: 150px;
+      }
+    }
+  }
+}

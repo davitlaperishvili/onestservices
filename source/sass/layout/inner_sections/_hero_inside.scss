@@ -41,6 +41,7 @@
       .page_subtitle{
         font-size: 18px;
         color: $cwhite;
+        max-width: 60%;
         @media(max-width: 1024px){
           font-size: 14px;
         }
